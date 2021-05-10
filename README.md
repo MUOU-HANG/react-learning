@@ -1,2 +1,2 @@
 # react-learning
-用于记录react的学习过程和联系的demo
+用于记录react的学习过程和练习的demo
