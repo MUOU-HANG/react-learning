@@ -1,0 +1,14 @@
+.todo-box {
+  width: 500px;
+  text-align: center;
+  width: 500px;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+.todo-list {
+  margin-top: 20px;
+}
+.todo-done {
+  color: grey;
+  text-decoration: line-through;
+}

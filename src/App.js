@@ -1,24 +1,27 @@
-import logo from './logo.svg';
+import React, { Suspense, lazy } from 'react';
 import './App.css';
+import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 
+import todo from './views/todo/todo';
+import ticTacToe from './views/ticTacToe/ticTacToe';
+import home from './views/home/home';
+const todohook = lazy(() => import('./views//todoHook/index'));
+const practice = lazy(() => import('./views//practice/index'));
+const context = lazy(() => import('./views//context/index'));
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Suspense fallback={<div>loadding</div>}>
+        <Switch>
+          <Route path='/todo' component={todo} />
+          <Route path='/todo-hook' component={todohook} />
+          <Route path='/ticTacToe' component={ticTacToe} />
+          <Route path='/practice' component={practice} />
+          <Route path='/context' component={context} />
+          <Route exact path='/' component={home} />
+        </Switch>
+      </Suspense>
+    </Router>
   );
 }
 
