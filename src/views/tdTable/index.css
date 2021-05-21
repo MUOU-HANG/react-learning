@@ -1,0 +1,19 @@
+body {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* 未访问的链接 */
+a:link {
+  color: #ff0000;
+}
+
+/* 已访问的链接 */
+a:visited {
+  color: #e6e5eb;
+}
+
+/* 鼠标悬停链接 */
+a:hover {
+  color: #ff00ff;
+}

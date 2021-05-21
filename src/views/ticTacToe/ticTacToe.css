@@ -5,9 +5,9 @@
   padding-top: 50px;
 }
 body {
-  font: 14px "Century Gothic", Futura, sans-serif;
+  font: 14px 'Century Gothic', Futura, sans-serif;
   margin: 20px;
-  text-align: center;
+  /* text-align: center; */
 }
 .status {
   margin-bottom: 10px;

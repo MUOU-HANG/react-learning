@@ -5,9 +5,10 @@ import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 import todo from './views/todo/todo';
 import ticTacToe from './views/ticTacToe/ticTacToe';
 import home from './views/home/home';
-const todohook = lazy(() => import('./views//todoHook/index'));
-const practice = lazy(() => import('./views//practice/index'));
-const context = lazy(() => import('./views//context/index'));
+const todohook = lazy(() => import('./views/todoHook/index'));
+const practice = lazy(() => import('./views/practice/index'));
+const context = lazy(() => import('./views/context/index'));
+const tdTable = lazy(() => import('./views/tdTable'));
 function App() {
   return (
     <Router>
@@ -18,6 +19,7 @@ function App() {
           <Route path='/ticTacToe' component={ticTacToe} />
           <Route path='/practice' component={practice} />
           <Route path='/context' component={context} />
+          <Route path='/tdTable' component={tdTable} />
           <Route exact path='/' component={home} />
         </Switch>
       </Suspense>

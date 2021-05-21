@@ -1,17 +1,17 @@
 @import '~antd/dist/antd.css';
 
 .App {
-  text-align: center;
+  /* text-align: center; */
   width: 500px;
-  margin: 0 auto;
+  /* margin: 0 auto; */
   padding-top: 50px;
 }
 .todo-item {
-  margin-top:20px;
+  margin-top: 20px;
 }
-.todo-done{
+.todo-done {
   color: grey;
-  text-decoration:line-through;
+  text-decoration: line-through;
 }
 .App-logo {
   height: 40vmin;

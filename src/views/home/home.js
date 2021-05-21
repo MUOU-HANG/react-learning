@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+
 function Home() {
   return (
     <div>
@@ -17,6 +18,9 @@ function Home() {
       </h2>
       <h2>
         <Link to='/context'>Context</Link>
+      </h2>
+      <h2>
+        <Link to='/tdTable'>TD Table</Link>
       </h2>
     </div>
   );
