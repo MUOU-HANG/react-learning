@@ -9,6 +9,7 @@ const todohook = lazy(() => import('./views/todoHook/index'));
 const practice = lazy(() => import('./views/practice/index'));
 const context = lazy(() => import('./views/context/index'));
 const tdTable = lazy(() => import('./views/tdTable'));
+const test = lazy(() => import('./views/test'));
 function App() {
   return (
     <Router>
@@ -20,6 +21,7 @@ function App() {
           <Route path='/practice' component={practice} />
           <Route path='/context' component={context} />
           <Route path='/tdTable' component={tdTable} />
+          <Route path='/test' component={test} />
           <Route exact path='/' component={home} />
         </Switch>
       </Suspense>
