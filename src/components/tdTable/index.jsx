@@ -7,13 +7,13 @@ import TableBar from './tableBar';
 import './index.less';
 
 const TableContext = createContext();
-const { Provider } = TableContext;
+const { Provider } = TableContext
 
 const TdTableApp = (props) => {
-  const { width = '95%', columns } = props;
-  const [selectedData, setSelectedData] = useState([]); // 存储勾选的数据
-  const [columnsInner, setColumnsInner] = useState([]); // 转换表头字段
-  const [treeData, setTreeData] = useState([]);
+  const { width = '95%', columns } = props
+  const [selectedData, setSelectedData] = useState([]) // 存储勾选的数据
+  const [columnsInner, setColumnsInner] = useState([]) // 转换表头字段
+  const [treeData, setTreeData] = useState([])
 
   const propsContext = {
     ...props,
@@ -23,19 +23,19 @@ const TdTableApp = (props) => {
     setSelectedData,
     columnsInner,
     setColumnsInner,
-  };
+  }
 
   useEffect(() => {
     try {
       if (treeData.length === 0) {
-        const _columns = Object.assign(columns);
-        setColumnsInner(_columns);
-        _columns.map((item) => (item.show = true));
+        const _columns = Object.assign(columns)
+        setColumnsInner(_columns)
+        _columns.map((item) => (item.show = true))
       }
     } catch (e) {
-      console.log('未传入表头字段');
+      console.log('未传入表头字段')
     }
-  }, [columns]);
+  }, [columns])
 
   return (
     <>
@@ -48,7 +48,7 @@ const TdTableApp = (props) => {
         </div>
       </Provider>
     </>
-  );
-};
+  )
+}
 
 export default memo(TdTableApp);

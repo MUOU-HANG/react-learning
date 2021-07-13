@@ -2,13 +2,13 @@ import React, { Suspense, lazy } from 'react';
 import './App.css';
 import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 
-import todo from './views/todo/todo';
-import ticTacToe from './views/ticTacToe/ticTacToe';
-import home from './views/home/home';
-const todohook = lazy(() => import('./views/todoHook/index'));
-const practice = lazy(() => import('./views/practice/index'));
-const context = lazy(() => import('./views/context/index'));
-const tdTable = lazy(() => import('./views/tdTable'));
+import todo from './views/todo'
+import ticTacToe from './views/ticTacToe'
+import home from './views/home'
+const todohook = lazy(() => import('./views/todoHook'))
+const practice = lazy(() => import('./views/practice'))
+const context = lazy(() => import('./views/context'))
+const tdTable = lazy(() => import('./views/tdTable'))
 const test = lazy(() => import('./views/test'));
 function App() {
   return (
