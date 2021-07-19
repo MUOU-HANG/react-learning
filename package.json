@@ -8,8 +8,12 @@
     "@testing-library/user-event": "^12.8.3",
     "ahooks": "^2.10.0",
     "antd": "^4.15.5",
+    "axios": "^0.21.1",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.31.0",
     "i18next": "^20.3.2",
     "intl": "^1.2.5",
+    "pubsub-js": "^1.9.3",
     "react": "^17.0.1",
     "react-beautiful-dnd": "^13.1.0",
     "react-dom": "^17.0.1",
@@ -25,7 +29,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lint": "eslint src --ext .js,.jsx,.ts,.tsx"
   },
   "eslintConfig": {
     "extends": [

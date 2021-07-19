@@ -1,16 +1,16 @@
-import en from './en_US.json';
-import zh from './zh_CN.json';
+import en from './en_US.json'
+import zh from './zh_CN.json'
 
 const resources = {
   en: {
-    translation: en,
+    translation: en
   },
   'zh-CN': {
-    translation: zh,
+    translation: zh
   },
   zh: {
-    translation: zh,
-  },
-};
+    translation: zh
+  }
+}
 
-export default resources;
+export default resources
