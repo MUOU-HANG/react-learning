@@ -34,6 +34,16 @@ const TestApp = () => {
   useEffect(() => {
     return () => {}
   })
+
+  function handelClick() {
+    const bug = true
+    if (bug) {
+      console.log(' clicked!')
+    } else {
+      console.log('no clicked!')
+    }
+  }
+
   return (
     <>
       <h2>1. 中英文切换</h2>
@@ -107,6 +117,10 @@ const TestApp = () => {
         // console.log(data)
       }}
       >异步获取数据</button>
+      <hr />
+      <h2>8. 标签测试</h2>
+      <button onClick={handelClick}>babel test</button>
+
     </>
   )
 }
