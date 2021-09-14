@@ -1,0 +1,28 @@
+.container{
+  width:400px;
+  margin: 50px auto;
+}
+.checkboxs{
+  width:400px;
+  margin: 10px 0;
+  padding:10px;
+  background-color: aliceblue;
+
+}
+.checkbox{
+  height: 32px;
+  line-height: 32px;
+  display: flex;
+  flex-flow: row wrap;
+  align-items:center;
+  justify-content:space-between;
+}
+.checkbox .btn{
+  /* display:none; */
+}
+.checkbox :hover .btn{
+  display:block;
+}
+.textGrey{
+  color:rgb(206, 206, 206);
+}
