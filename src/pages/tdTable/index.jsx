@@ -1,5 +1,5 @@
 import React from 'react'
-import TdTable from '../../../components/tdTable'
+import TdTable from '../../components/tdTable'
 import { Button, Input, Row, Col, DatePicker, Form, Select } from 'antd'
 import moment from 'moment'
 import { SwapRightOutlined } from '@ant-design/icons'

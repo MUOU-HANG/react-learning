@@ -34,6 +34,9 @@ function Home() {
       <h2>
         <Link to="/hookRedux">使用Hook实现redux</Link>
       </h2>
+      <h2>
+        <Link to="/markdown">markdown</Link>
+      </h2>
     </div>
   )
 }
