@@ -65,6 +65,7 @@ const Markdown = () => {
   }
   return (
     <div>
+      <h1>react-mde</h1>
       <div className="container">
         <ReactMde
           generateMarkdownPreview={markdown =>
